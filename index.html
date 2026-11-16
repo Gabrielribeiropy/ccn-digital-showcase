@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+    <meta name="description" content="Vitrine técnica independente com dados fictícios e código demonstrativo.">
+    <title>CCN Digital — vitrine técnica</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./app.mjs"></script>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="brand"><span class="brand-mark" aria-hidden="true">C</span><span>CCN Digital <small>Showcase</small></span></div>
+        <button id="language" class="language-button" type="button" aria-label="Switch language">EN</button>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div>
+            <p class="eyebrow" id="eyebrow">VITRINE TÉCNICA INDEPENDENTE</p>
+            <h1 id="heading">Informação clara, em um só lugar.</h1>
+            <p class="hero-copy" id="intro">Uma demonstração isolada de como organizar conteúdo e serviços para uma comunidade acadêmica.</p>
+            <div class="hero-actions"><a href="#explore" id="explore-link" class="primary-button">Explorar conteúdo</a><a href="#editor" id="editor-link" class="secondary-button">Ver painel simulado</a></div>
+          </div>
+          <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="glass-card"><span class="glass-icon">✦</span><span class="glass-line"></span><span class="glass-line short"></span><span class="glass-row"><i></i><i></i><i></i></span></div></div>
+        </section>
+
+        <section class="notice" id="notice">Dados fictícios. Esta vitrine não se conecta ao sistema real, não possui contas e não representa um serviço oficial.</section>
+
+        <section class="section" id="explore">
+          <div class="section-heading"><div><p class="eyebrow" id="content-label">CONTEÚDO</p><h2 id="content-title">Encontre o que precisa</h2></div><p id="visible-count" class="count"></p></div>
+          <div class="controls"><label class="search"><span id="search-label">Buscar conteúdo</span><input id="search" type="search" maxlength="80" autocomplete="off" placeholder="Digite para filtrar"></label><div id="filters" class="filters" role="group" aria-label="Categorias"></div></div>
+          <div id="cards" class="cards" aria-live="polite"></div>
+        </section>
+
+        <section class="section editor" id="editor">
+          <div class="section-heading"><div><p class="eyebrow" id="editor-label">INTERAÇÃO</p><h2 id="editor-title">Prévia do painel</h2></div></div>
+          <p id="editor-description" class="editor-description">Ative ou oculte itens para observar como a vitrine responde. As mudanças ficam apenas nesta página e somem ao recarregar.</p>
+          <div id="editor-items" class="editor-items"></div>
+        </section>
+      </main>
+
+      <footer><span>CCN Digital — public code showcase</span><span id="footer-note">Demonstração independente · dados fictícios</span></footer>
+    </div>
+  </body>
+</html>

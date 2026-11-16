@@ -1,0 +1,13 @@
+{
+  "name": "ccn-digital-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check app.mjs && node --check data.mjs && node --check logic.mjs && npm run test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
